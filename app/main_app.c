@@ -22,14 +22,11 @@ void main_app_init(CAN_HandleTypeDef *hcan1, I2C_HandleTypeDef *hi2c1) {
     uint8_t readBuf[4] = {0};
     AT24C02_Status rStatus = AT24C02_ReadBuffer(hi, 0x02, readBuf, 2);
 
-
 }
 
 void main_app_run(void)
 {
     makalu_bxcan_process();
-
-
 
     /* send a heartbeat every 1000ms */
     static uint32_t last_tx = 0;
