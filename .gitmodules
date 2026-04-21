@@ -1,3 +1,4 @@
 [submodule "sdk"]
 	path = sdk
-	url = ../makalu_sdk
+	url = https://github.com/ascent-electronics/makalu_sdk.git
+	branch = main
