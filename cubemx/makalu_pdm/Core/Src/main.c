@@ -58,7 +58,6 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_CAN1_Init(void);
 static void MX_I2C1_Init(void);
-static void EEPROM_Test(void);
 
 /* USER CODE BEGIN PFP */
 /* USER CODE END PFP */
