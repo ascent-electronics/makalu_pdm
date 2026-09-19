@@ -3,13 +3,17 @@
 //
 #include "main_app.h"
 #include "cmsis_os2.h"
+
+extern CAN_HandleTypeDef hcan1;
+extern I2C_HandleTypeDef hi2c1;
+
 void StartDefaultTask(void *argument)
 {
     /* USER CODE BEGIN 5 */
+    main_app_init(&hcan1, &hi2c1);
     /* Infinite loop */
     for(;;)
     {
-        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
         main_app_run();
         osDelay(1);
     }

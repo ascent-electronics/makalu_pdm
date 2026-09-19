@@ -45,6 +45,11 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
         ${CMAKE_SOURCE_DIR}/app/main_app.c    # ← actual filename once confirmed
+        ${CMAKE_SOURCE_DIR}/app/sys_txcan.c    # ← actual filename once confirmed
+        ${CMAKE_SOURCE_DIR}/app/sys_rxcb.c    # ← actual filename once confirmed
+        ${CMAKE_SOURCE_DIR}/app/cdg_session.c    # ← actual filename once confirmed
+
+
 )
 
 # Add include paths

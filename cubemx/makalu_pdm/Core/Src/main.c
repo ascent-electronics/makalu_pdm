@@ -97,8 +97,6 @@ int main(void)
   MX_CAN1_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  main_app_init(&hcan1, &hi2c1);
-
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -122,6 +120,7 @@ int main(void)
 
   /* Create the thread(s) */
   /* creation of defaultTask */
+
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
